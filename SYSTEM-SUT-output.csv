@@ -1,0 +1,16 @@
+# ACTS Test Suite Generation: Fri Apr 22 20:09:27 CEST 2022
+#  '*' represents don't care value 
+# Degree of interaction coverage: 2
+# Number of parameters: 5
+# Maximum number of values per parameter: 3
+# Number of configurations: 9
+Registrace,jimeno,Destinace,Datum_narozeni,sleva
+false,NULL,Tokyo,01.08.2002,Duchodce
+true,NULL,Aachen,08/01/2002,DJ3J-DMK3-L1L9
+false,NULL,Aachen,2002-08-01,Student
+true,Yurnero,Tokyo,01.08.2002,DJ3J-DMK3-L1L9
+false,Yurnero,Tokyo,08/01/2002,Student
+true,Yurnero,Aachen,2002-08-01,Duchodce
+true,.,Aachen,01.08.2002,Student
+false,.,Tokyo,08/01/2002,Duchodce
+false,.,Tokyo,2002-08-01,DJ3J-DMK3-L1L9
