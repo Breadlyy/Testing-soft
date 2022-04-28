@@ -1,0 +1,16 @@
+0;1 - ano
+ - 3 - chyba
+ - NE - ne
+ - 8 - prevodem
+ - 13
+1;1 - ano
+ - 3 - OK
+ - 9 - podminky nesplneny - ne
+ - 8 - online - 15 - platba 
+neuspesna - prevodem
+ - 13
+2;1 - NE - 9 - ?? - 8 - prevodem
+ - 13
+3;1 - NE - ne
+ - 8 - online - 15 - platba 
+uspesna

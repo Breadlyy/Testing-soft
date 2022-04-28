@@ -1,0 +1,6 @@
+0;start - ano - Chyba - ano - OK1 -  - podminky nesplneny -  - OK2 - prevodem
+1;start - ne1 -  - podminky nesplneny - ne2 - prevodem
+2;start - ano - Chyba - ne1 - ne2 - online - platba neuspesna - prevodem
+3;start - ano - OK1 - ne2 - prevodem
+4;start - ano - OK1 -  - OK2 - online - platba neuspesna - online - platba neuspesna - prevodem
+5;start - ano - OK1 - ne2 - online - platba uspesna
