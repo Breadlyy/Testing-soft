@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project description="" id="1" linkage="" name="New project 1" version="">
+    <graphs>
+        <graph description="" id="7" linkage="" name="New activity diagram 1" type="ACTIVITY_DIAGRAM" version="">
+            <node description="" height="25.0" id="2" name="START" priority="" style="STYLE_ACTIVITY_START" width="25.0" xpos="170.0" ypos="50.0"/>
+            <edge description="" id="4" name="1" priority="" source="2" target="3"/>
+            <node description="" height="40.0" id="3" name="Go to main page" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="140.0" ypos="160.0"/>
+            <edge description="" id="6" name="2" priority="" source="3" target="5"/>
+            <node description="" height="50.0" id="5" name="Registrate or choose the stuff" priority="" style="STYLE_ACTIVITY_DECISION" width="60.0" xpos="150.0" ypos="230.0"/>
+            <edge description="" id="8" name="registrate" priority="" source="5" target="7"/>
+            <edge description="" id="12" name="choose" priority="" source="5" target="11"/>
+            <node description="" height="40.0" id="7" name="Click sign in" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="210.0" ypos="310.0"/>
+            <edge description="" id="10" name="4" priority="" source="7" target="9"/>
+            <node description="" height="40.0" id="9" name="Create an account&#10; or sign in" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="210.0" ypos="390.0"/>
+            <edge description="" id="17" name="8" priority="" source="9" target="16"/>
+            <node description="" height="40.0" id="11" name="Choose the stuff &#10;from assortment" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="40.0" ypos="300.0"/>
+            <edge description="" id="14" name="6" priority="" source="11" target="13"/>
+            <node description="" height="40.0" id="13" name="Click proceed &#10;to checkout" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="40.0" ypos="390.0"/>
+            <edge description="" id="15" name="7" priority="" source="13" target="9"/>
+            <node description="" height="60.0" id="16" name="sign in or create &#10;an account" priority="" style="STYLE_ACTIVITY_DECISION" width="60.0" xpos="350.0" ypos="390.0"/>
+            <edge description="" id="20" name="create an account" priority="" source="16" target="18"/>
+            <edge description="" id="25" name="Log in" priority="" source="16" target="24"/>
+            <node description="" height="40.0" id="18" name="Fill the regisration&#10;form" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="400.0" ypos="300.0"/>
+            <edge description="" id="23" name="11" priority="" source="18" target="22"/>
+            <node description="" height="40.0" id="19" name="click button &#10;&quot;forgot your password?&quot;" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="470.0" ypos="540.0"/>
+            <edge description="" id="30" name="14" priority="" source="19" target="29"/>
+            <node description="" height="50.0" id="22" name="registration &#10;data control" priority="" style="STYLE_ACTIVITY_DECISION" width="70.0" xpos="500.0" ypos="260.0"/>
+            <edge description="" id="33" name="16" priority="" source="22" target="31"/>
+            <node description="" height="50.0" id="24" name="Forgot the password &#10;or not" priority="" style="STYLE_ACTIVITY_DECISION" width="60.0" xpos="430.0" ypos="450.0"/>
+            <edge description="" id="26" name="forgot" priority="" source="24" target="19"/>
+            <edge description="" id="28" name="didn't" priority="" source="24" target="27"/>
+            <node description="" height="40.0" id="27" name="flii log in form" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="540.0" ypos="440.0"/>
+            <edge description="" id="34" name="17" priority="" source="27" target="31"/>
+            <node description="" height="60.0" id="29" name="write email &#10;and click &#10;&quot;Retrieve Password&quot;&#10;to get new pass" priority="" style="STYLE_ACTIVITY_NODE" width="90.0" xpos="590.0" ypos="520.0"/>
+            <edge description="" id="32" name="15" priority="" source="29" target="27"/>
+            <node description="" height="40.0" id="31" name="Click &#10;log in/registrate" priority="" style="STYLE_ACTIVITY_NODE" width="80.0" xpos="590.0" ypos="350.0"/>
+            <edge description="" id="36" name="18" priority="" source="31" target="35"/>
+            <node description="" height="50.0" id="35" name="entrance &#10;data control" priority="" style="STYLE_ACTIVITY_DECISION" width="60.0" xpos="690.0" ypos="430.0"/>
+            <edge description="" id="39" name="success" priority="" source="35" target="38"/>
+            <edge description="" id="41" name="20" priority="" source="35" target="27"/>
+            <edge description="" id="42" name="21" priority="" source="35" target="18"/>
+            <node description="" height="35.0" id="38" name="END P" priority="" style="STYLE_ACTIVITY_END" width="35.0" xpos="840.0" ypos="390.0"/>
+        </graph>
+    </graphs>
+    <crud linkage="" version="">
+        <description/>
+        <entities>
+            <entity entity_id="E0">
+                <name>E1</name>
+                <description/>
+                <attributes/>
+            </entity>
+            <entity entity_id="E1">
+                <name>E2</name>
+                <description/>
+                <attributes/>
+            </entity>
+            <entity entity_id="E2">
+                <name>E3</name>
+                <description/>
+                <attributes/>
+            </entity>
+        </entities>
+        <functions>
+            <function function_id="F0">
+                <name>F1</name>
+                <description/>
+            </function>
+            <function function_id="F1">
+                <name>F2</name>
+                <description/>
+            </function>
+            <function function_id="F2">
+                <name>F3</name>
+                <description/>
+            </function>
+        </functions>
+        <actions>
+            <action entity_id_ref="E0" function_id_ref="F0">
+                <create imns="false" is_set="false">
+                    <touched_attributes/>
+                </create>
+                <read imns="false" is_set="false">
+                    <touched_attributes/>
+                </read>
+                <update imns="false" is_set="false">
+                    <touched_attributes/>
+                </update>
+                <delete imns="false" is_set="false">
+                    <touched_attributes/>
+                </delete>
+                <best_read imns="false" is_set="false"/>
+                <influences>
+                    <influence entity_id_ref="E1" imns="false" is_set="false"/>
+                    <influence entity_id_ref="E2" imns="false" is_set="false"/>
+                </influences>
+            </action>
+            <action entity_id_ref="E1" function_id_ref="F0">
+                <create imns="false" is_set="false">
+                    <touched_attributes/>
+                </create>
+                <read imns="false" is_set="false">
+                    <touched_attributes/>
+                </read>
+                <update imns="false" is_set="false">
+                    <touched_attributes/>
+                </update>
+                <delete imns="false" is_set="false">
+                    <touched_attributes/>
+                </delete>
+                <best_read imns="false" is_set="false"/>
+                <influences>
+                    <influence entity_id_ref="E0" imns="false" is_set="false"/>
+                    <influence entity_id_ref="E2" imns="false" is_set="false"/>
+                </influences>
+            </action>
+            <action entity_id_ref="E2" function_id_ref="F0">
+                <create imns="false" is_set="false">
+                    <touched_attributes/>
+                </create>
+                <read imns="false" is_set="false">
+                    <touched_attributes/>
+                </read>
+                <update imns="false" is_set="false">
+                    <touched_attributes/>
+                </update>
+                <delete imns="false" is_set="false">
+                    <touched_attributes/>
+                </delete>
+                <best_read imns="false" is_set="false"/>
+                <influences>
+                    <influence entity_id_ref="E0" imns="false" is_set="false"/>
+                    <influence entity_id_ref="E1" imns="false" is_set="false"/>
+                </influences>
+            </action>
+            <action entity_id_ref="E0" function_id_ref="F1">
+                <create imns="false" is_set="false">
+                    <touched_attributes/>
+                </create>
+                <read imns="false" is_set="false">
+                    <touched_attributes/>
+                </read>
+                <update imns="false" is_set="false">
+                    <touched_attributes/>
+                </update>
+                <delete imns="false" is_set="false">
+                    <touched_attributes/>
+                </delete>
+                <best_read imns="false" is_set="false"/>
+                <influences>
+                    <influence entity_id_ref="E1" imns="false" is_set="false"/>
+                    <influence entity_id_ref="E2" imns="false" is_set="false"/>
+                </influences>
+            </action>
+            <action entity_id_ref="E1" function_id_ref="F1">
+                <create imns="false" is_set="false">
+                    <touched_attributes/>
+                </create>
+                <read imns="false" is_set="false">
+                    <touched_attributes/>
+                </read>
+                <update imns="false" is_set="false">
+                    <touched_attributes/>
+                </update>
+                <delete imns="false" is_set="false">
+                    <touched_attributes/>
+                </delete>
+                <best_read imns="false" is_set="false"/>
+                <influences>
+                    <influence entity_id_ref="E0" imns="false" is_set="false"/>
+                    <influence entity_id_ref="E2" imns="false" is_set="false"/>
+                </influences>
+            </action>
+            <action entity_id_ref="E2" function_id_ref="F1">
+                <create imns="false" is_set="false">
+                    <touched_attributes/>
+                </create>
+                <read imns="false" is_set="false">
+                    <touched_attributes/>
+                </read>
+                <update imns="false" is_set="false">
+                    <touched_attributes/>
+                </update>
+                <delete imns="false" is_set="false">
+                    <touched_attributes/>
+                </delete>
+                <best_read imns="false" is_set="false"/>
+                <influences>
+                    <influence entity_id_ref="E0" imns="false" is_set="false"/>
+                    <influence entity_id_ref="E1" imns="false" is_set="false"/>
+                </influences>
+            </action>
+            <action entity_id_ref="E0" function_id_ref="F2">
+                <create imns="false" is_set="false">
+                    <touched_attributes/>
+                </create>
+                <read imns="false" is_set="false">
+                    <touched_attributes/>
+                </read>
+                <update imns="false" is_set="false">
+                    <touched_attributes/>
+                </update>
+                <delete imns="false" is_set="false">
+                    <touched_attributes/>
+                </delete>
+                <best_read imns="false" is_set="false"/>
+                <influences>
+                    <influence entity_id_ref="E1" imns="false" is_set="false"/>
+                    <influence entity_id_ref="E2" imns="false" is_set="false"/>
+                </influences>
+            </action>
+            <action entity_id_ref="E1" function_id_ref="F2">
+                <create imns="false" is_set="false">
+                    <touched_attributes/>
+                </create>
+                <read imns="false" is_set="false">
+                    <touched_attributes/>
+                </read>
+                <update imns="false" is_set="false">
+                    <touched_attributes/>
+                </update>
+                <delete imns="false" is_set="false">
+                    <touched_attributes/>
+                </delete>
+                <best_read imns="false" is_set="false"/>
+                <influences>
+                    <influence entity_id_ref="E0" imns="false" is_set="false"/>
+                    <influence entity_id_ref="E2" imns="false" is_set="false"/>
+                </influences>
+            </action>
+            <action entity_id_ref="E2" function_id_ref="F2">
+                <create imns="false" is_set="false">
+                    <touched_attributes/>
+                </create>
+                <read imns="false" is_set="false">
+                    <touched_attributes/>
+                </read>
+                <update imns="false" is_set="false">
+                    <touched_attributes/>
+                </update>
+                <delete imns="false" is_set="false">
+                    <touched_attributes/>
+                </delete>
+                <best_read imns="false" is_set="false"/>
+                <influences>
+                    <influence entity_id_ref="E0" imns="false" is_set="false"/>
+                    <influence entity_id_ref="E1" imns="false" is_set="false"/>
+                </influences>
+            </action>
+        </actions>
+        <test_cases/>
+    </crud>
+</project>
