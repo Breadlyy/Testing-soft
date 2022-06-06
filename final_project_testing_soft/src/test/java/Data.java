@@ -1,6 +1,6 @@
 public class Data {
     public String getUrl = "http://automationpractice.com/index.php";
-    public String email = "kirill.lozanov69@gmail.com";
+    public String email = "kihjl.lozanov69@gmail.com";
     public String first_name = "Juggernaut";
     public String last_name = "Machinegunner";
     public String password = "qwer1234";

@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Registration extends Data {
     private By login = By.className("login");
     private By inputEmail = By.id("email_create");
-    private By createAccount = By.id("SubmitCreate");
+    private By createAccount = By.xpath("//*[@id=\"SubmitCreate\"]");
     private By gender = By.id("id_gender1");
     private By first_name = By.id("customer_firstname");
     private By last_name = By.id("customer_lastname");
@@ -28,9 +28,9 @@ public class Registration extends Data {
     private By country = By.xpath("//select[@id = 'id_country']//option[@value = '21']");
     private By selector_state = By.id("id_state");
     private By state = By.xpath("//select[@id='id_state']//option[@value = '1']");
-    @ParameterizedTest(name = "Create account with {0} fname {1} lname {2} mail {3} pass {4} day {5} month  - RESULT name in acc {6}")
-      @CsvSource({"nattiddiddiffou-5783@yopmail.com", "nattiddiddiffou-5783@yopmail.com", "nattiddiddiffou-5783@yopmail.com", "nattiddiddiffou-5783@yopmail.com"})
-    public void registration(String email)
+    @ParameterizedTest(name = "Create account with {0} email {1} fname {2} lname {3} pass")
+    @CsvSource({"nattgffou-5783@yopmail.com, Josef, Sedláček, lkjh12345", "brsgfgejs3@yopmail.com, Ilon, Mask, oklaf925", "7fs8gksdgre3@yopmail.com, Yurnero, Machinegunner, faceless228", "n7fbh3erhj3@yopmail.com, Mars, Greatest, titan360"})
+    public void registration(String email, String First_name, String Last_name, String password )
     {
         WebDriver driver = new ChromeDriver();
         Data getData = new Data();
@@ -41,14 +41,15 @@ public class Registration extends Data {
         driver.findElement(inputEmail).sendKeys(email);
         driver.findElement(createAccount).click();
         try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
+            Thread.sleep(3500);
+        }catch (InterruptedException e)
+        {
             e.printStackTrace();
         }
         driver.findElement(gender).click();
-        driver.findElement(first_name).sendKeys(getData.first_name);
-        driver.findElement(last_name).sendKeys(getData.last_name);
-        driver.findElement(pass).sendKeys(getData.password);
+        driver.findElement(first_name).sendKeys(First_name);
+        driver.findElement(last_name).sendKeys(Last_name);
+        driver.findElement(pass).sendKeys(password);
         driver.findElement(selector_day).click();
         driver.findElement(day).click();
         driver.findElement(selector_month).click();
